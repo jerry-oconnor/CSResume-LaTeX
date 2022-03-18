@@ -1,0 +1,210 @@
+
+ %-----------CS Resume Template                                        -----------
+ %-----------Based on "Jack's Resume" (by Jake Gutierrez, MIT License) -----------
+ %-----------Modified by Jerry O'Connor (MIT License)                  -----------
+ %-----------GitHub: https://github.com/jerry-oconnor                  -----------
+ %-----------Linkedin: https://www.linkedin.com/in/jeremiah-oconnor/   -----------
+  
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[super]{nth}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+%\usepackage[sfdefault]{FiraSans}
+%\usepackage[sfdefault]{roboto}
+%\usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+%\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+  \Huge {\scshape Jeremiah O'Connor} \\ \vspace{7pt}
+  \vspace{5mm}
+  \small \faPhone* (914) 216-9704 $ | $
+  \href{mailto:jeremiah.oconnor1@gmail.com}{{\faMailBulk \hspace{1pt} jeremiah.oconnor1@gmail.com}} $ | $
+  \href{https://www.linkedin.com/in/jeremiah-oconnor/}{{\faLinkedin \hspace{1pt} linkedin.com/in/jeremiah-oconnor/}} $ | $
+  \href{https://github.com/jerry-oconnor}{{\faGithub \hspace{1pt} github.com/jerry-oconnor}}
+\end{center}
+
+%---------EDUCATION---------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{University of California, Davis}{Fall 2022 - Spring 2024}
+{Bachelor's Degree, Computer Science \& Data Science}{}
+\resumeItemListStart
+\resumeItem{Pursuing a double major in Computer Science and Data Science}
+\resumeItemListEnd
+\resumeSubheading
+{Diablo Valley College}{Fall 2020 - Spring 2022}
+{Transfer, Computer Science \& Mathematics}{}
+\resumeItemListStart
+\resumeItem{Maintained a 4.0 GPA Across CS \& Math Courses}
+\resumeItem{Academic Honors for All Semesters at DVC}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+                \textbf{Programming Languages}{: Python, C/C++, JavaScript, HTML/CSS, Jinja2, C\#, MATLAB, LaTeX} \\
+                \textbf{Frameworks}{: React, React Native, JupyterLab, Node.js, Flask, BootstrapCSS} \\
+                \textbf{Developer Tools/ Platforms}{: Git, AWS (S3, EC2, Sagemaker, Ground Truth), Visual Studio Code, Heroku} \\
+          }}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Software Engineer Intern (Full Stack / ML)}{January 2022 -- Present}
+{IpserLab}{Palo Alto, California, United States}
+\resumeItemListStart
+\resumeItem{Owned, Designed, and Delivered a mobile frontend using React Native}
+\resumeItem{Implemented an Object Detection ML Model using AWS Sagemaker and deployed as an endpoint on AWS Backend}
+\resumeItem{Worked on the ML development process end-to-end, from data cleansing and training to validation and testing}
+\resumeItem{Technologies Used: React Native, TensorFlow, TensorFlow Lite}
+\resumeItem{Languages: Python, JavaScript}
+\resumeItemListEnd
+\resumeSubheading
+{Programming \& Computer Science Tutor}{June 2021 -- Present}
+{The Coder School - San Ramon}{San Ramon, California, United States}
+\resumeItemListStart
+\resumeItem{Provide lessons and support to students in Python, JavaScript, Lua, C\#, game design, and computer science concepts.}
+\resumeItem{Collect and analyze data on lessons to improve student learning outcomes}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\href{https://github.com/jerry-oconnor/VLRBot}{\faLink \hspace{1pt} \textbf{VLRBot}}\hspace{3pt}(Discord Bot) $|$ \emph{JavaScript (Node.js, Discord.js)}}{2021}
+\resumeItemListStart
+\resumeItem{Discord bot that utilizes the VLRGG API to post match scores, news stories, and upcoming events.}
+\resumeItem{Utilizes node.js, as well as Axios and Discord Javascript libraries, along with VLRGG Api and asynchronous API calls, and modular export-based command execution}
+\resumeItem{Commands are executed via JavaScript event listener functions}
+\resumeItemListEnd
+\resumeProjectHeading
+{\href{https://myhotcrypto.herokuapp.com/}{\faLink \hspace{1pt} \textbf{HotCrypto}}\hspace{3pt}(Web App) $|$ \emph{Python (Flask, PRAW, Bootstrap CSS)}}{2021}
+\resumeItemListStart
+\resumeItem{Python Web App that scrapes, cleans, and processes mention data from r/cryptocurrency}
+\resumeItem{Utilizes PRAW (Python Reddit API Wrapper) to scrape data, applies data cleansing and processing methods to compute frequency of each currency's mentions in posts/comments}
+\resumeItem{Utilizes Flask, in combination with HTML and BootstrapCSS to create a web app that displays this data in a clear and meaningful way }
+\resumeItemListEnd
+
+%------------COURSEWORK----------------
+\section{Coursework}
+\resumeItemListStart
+\resumeItem{Data Structures/Algorithms, Program Design, Advanced Programming, Object-Oriented Programming, Computer Architecture}
+\resumeItem{Linear Algebra, Discrete Math, Statistics, Differential Equations, Calculus I-III, Engineering Physics}
+\resumeItemListEnd
+
+
+%-----------Recent Awards-----------
+\section{Awards}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+                \textbf{Academic Honors/Dean's List}\hspace{1pt} (Term GPA > 3.5 for Fall 2020, Spring 2021, Fall 2021 ) $|$ \emph{Diablo Valley College} \hspace*{\fill}  2020-2021 \\
+          }}
+\end{itemize}
+
+%-------------------------------------------
+\end{itemize}
+
+\end{document}
